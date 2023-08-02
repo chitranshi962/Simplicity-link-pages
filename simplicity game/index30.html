@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <section>
+        <h1>Math Addition Quiz Game:
+        </h1>
+        <div class="centerdiv">
+            <div class="insertBox">
+                <div class="box1">
+                    <input type="text"  id="v1">
+                </div>
+                <div class="box1">
+                    <p>+</p>
+                </div>
+                <div class="box1">
+                    <input type="text"  id="v2">
+                </div>
+            </div>
+            <div class="middleBox">
+                <input type="text"  id="answ">
+
+            
+
+            </div>
+            
+        </div>
+        <div class="sentBox">
+            <button onclick="jsGame"> Check box</button>
+        </div>
+    </section>
+    <script>
+        let n1 = Math.floor(Math.random()*10+1);
+        let n2 = Math.floor(Math.random()*10+1);
+
+
+        document.getElementById('v1').value = n1;
+        document.getElementById('v2').value = n2;
+
+        let ans = n1 + n2;
+        
+        const jsGame = () => {
+            var a = document.getElementById('answ');
+
+            if(usera == ans) {
+                alert('Well Done! Your Answer is correct.')
+            }else {
+                alert("Correct answer is " ans + ". Try Again.");
+            }
+         n1 = Math.floor(Math.random()*10+1);
+         n2 = Math.floor(Math.random()*10+1);
+
+
+        document.getElementById('v1').value = n1;
+        document.getElementById('v2').value = n2;
+
+         ans = n1 + n2;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
